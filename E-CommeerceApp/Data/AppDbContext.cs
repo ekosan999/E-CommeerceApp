@@ -10,6 +10,7 @@ namespace E_CommeerceApp.Data
           
         }
         public DbSet<Products> Products { get; set; }
+        public DbSet<Orders> Orders { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasDefaultSchema("Product");
